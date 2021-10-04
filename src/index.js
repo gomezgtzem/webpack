@@ -1,28 +1,30 @@
-require('fslightbox');
+import Swal from "sweetalert2";
+require("fslightbox");
 
-fsLightboxInstances['first-lightbox'].open(0);
-fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+// fsLightboxInstances["first-lightbox"].open(0);
+// fsLightboxInstances["second-lightbox"].props.onOpen = () =>
+//   console.log("Lightbox open!");
 
-// import Swal from 'sweetalert2'
-// Swal.fire({
-//   title: 'Error!',
-//   text: 'Do you want to continue',
-//   icon: 'error',
-//   confirmButtonText: 'Cool'
-// })
+Swal.fire({
+  title: "Error!",
+  text: "Do you want to continue",
+  icon: "error",
+  confirmButtonText: "Cool",
+});
 
-// Swal.fire({
-//   title: 'Emmanuel Gomez',
-//   width: 400,
-//   padding: '3em',
-//   background: '#fff url(https://media3.giphy.com/media/mtaWx98w7mX7y/giphy.gif?cid=ecf05e473gw398tuyvq1zq6l8ipvti6ij9858srx1sgzjbgh&rid=giphy.gif&ct=g)',
-//   backdrop: `
-//     rgba(0,0,123,0.4)
-//     url("https://gamingdna.co.nz/wp-content/uploads/2018/05/Pokemon-BG.jpg")
-//     left top
-//     repeat
-//   `
-// })
+Swal.fire({
+  title: "Emmanuel Gomez",
+  width: 400,
+  padding: "3em",
+  background:
+    "#fff url(https://media3.giphy.com/media/mtaWx98w7mX7y/giphy.gif?cid=ecf05e473gw398tuyvq1zq6l8ipvti6ij9858srx1sgzjbgh&rid=giphy.gif&ct=g)",
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("https://gamingdna.co.nz/wp-content/uploads/2018/05/Pokemon-BG.jpg")
+    left top
+    repeat
+  `,
+});
 
 // import { suma, saludo } from "./operaciones";
 
